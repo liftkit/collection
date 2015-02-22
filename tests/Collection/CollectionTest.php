@@ -1,13 +1,13 @@
 <?php
 
-
-	require_once(__DIR__ . '/../bootstrap.php');
+	namespace LiftKit\Tests\Collection;
 
 	use LiftKit\Collection\Collection;
+	use PHPUnit_Framework_TestCase;
 
 
 
-	class Collection_Collection_Test extends PHPUnit_Framework_TestCase
+	class CollectionTest extends PHPUnit_Framework_TestCase
 	{
 		/**
 		 * @var Collection
