@@ -1,6 +1,6 @@
 <?php
 
-	namespace LiftKit\Tests\Collection;
+	namespace LiftKit\Tests\Unit\Collection;
 
 	use LiftKit\Collection\Collection;
 	use PHPUnit_Framework_TestCase;
