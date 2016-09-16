@@ -26,6 +26,10 @@
 
 		public function __construct ($array = array())
 		{
+			if ($array instanceof Iterator) {
+				$array = iterator_to_array($array);
+			}
+
 			$this->items = (array) $array;
 		}
 

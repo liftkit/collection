@@ -150,4 +150,23 @@
 				$items
 			);
 		}
+
+
+		public function testInitWithCollection ()
+		{
+			$this->collection['a'] = 1;
+			$this->collection['b'] = 2;
+
+			$collection = new Collection($this->collection);
+
+			$this->assertEquals(
+				$collection['a'],
+				1
+			);
+
+			$this->assertEquals(
+				$collection['b'],
+				2
+			);
+		}
 	}
