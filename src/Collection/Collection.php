@@ -46,54 +46,63 @@
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function count ()
 		{
 			return count($this->items);
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function current ()
 		{
 			return current($this->items);
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function key ()
 		{
 			return key($this->items);
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function next ()
 		{
 			return next($this->items);
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function rewind ()
 		{
 			return reset($this->items);
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function valid ()
 		{
 			return key($this->items) !== null;
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function offsetExists ($offset)
 		{
 			return isset($this->items[$offset]);
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function & offsetGet ($offset)
 		{
 			return $this->items[$offset];
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function offsetSet ($offset, $value)
 		{
 			if (is_null($offset)) {
@@ -104,6 +113,7 @@
 		}
 
 
+		#[\ReturnTypeWillChange]
 		public function offsetUnset ($offset)
 		{
 			unset($this->items[$offset]);
